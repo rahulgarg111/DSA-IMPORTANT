@@ -1,0 +1,19 @@
+Intuition
+
+1-none of the brackets are the enemy
+2-the most ideal condition is an empty string , so addition of an open bracket as well as closing bracket disrupts us.
+
+3-imagine the string is balanced till now and we get an extra closing bracket we will deal with it (this closing anomaly)
+ with the opening anomaly we found till now , as we are greedy so we try to neutralize these anomalies asap so we swap the
+  extra closing with the first open we saw(that was also an anomaly as each bracket techincally disrupt our ideal case
+   which is empty string)
+
+Approach
+
+keep track of swaps req , keep track of both anomalies - extra closing or extra opening brackets ,
+we can use variables - 1-openNeeded (for extra closing brackets)
+
+2-extraOpen
+when their diff is non zero we know some anomaly is getting dominant so so when lets say we get extra closing
+(as soon as we get one extra closing we rush to stop it - GREEDY APPROACH)
+so we swap and update variables

@@ -1,0 +1,63 @@
+# Find All Frequencies of Numbers 1 to N
+
+## Problem Statement
+
+Given an array `nums` of length `n` containing integers from 1 to `n`, find the frequency of each number from 1 to `n` using **constant extra space**.
+
+You must solve this problem **in-place** without using any extra arrays or data structures. The original array can be modified during the process, but you should be able to restore it if needed.
+
+Return an array `result` where `result[i]` represents the frequency of number `i+1` in the original array.
+
+## Examples
+
+### Example 1:
+```
+Input: nums = [2,3,3,5,3]
+Output: [0,1,3,0,1]
+Explanation: 
+- Number 1 appears 0 times
+- Number 2 appears 1 time  
+- Number 3 appears 3 times
+- Number 4 appears 0 times
+- Number 5 appears 1 time
+```
+
+### Example 2:
+```
+Input: nums = [1,2,3,4,5]
+Output: [1,1,1,1,1]
+Explanation: Each number from 1 to 5 appears exactly once.
+```
+
+### Example 3:
+```
+Input: nums = [1,1,1,1,1]
+Output: [5,0,0,0,0]
+Explanation: Only number 1 appears, and it appears 5 times.
+```
+
+### Example 4:
+```
+Input: nums = [4,3,2,7,8,2,3,1]
+Output: [1,2,2,1,0,0,1,1]
+Explanation:
+- Number 1 appears 1 time
+- Number 2 appears 2 times
+- Number 3 appears 2 times
+- Number 4 appears 1 time
+- Number 5 appears 0 times
+- Number 6 appears 0 times
+- Number 7 appears 1 time
+- Number 8 appears 1 time
+```
+
+## Constraints
+
+- `1 <= nums.length <= 10^5`
+- `1 <= nums[i] <= nums.length`
+- All elements in `nums` are within the range `[1, n]` where `n = nums.length`
+
+
+
+
+
