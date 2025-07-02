@@ -1,7 +1,5 @@
 /**
- * @param {character[][]} board
- * @param {string} word
- * @return {boolean}
+ RAT IN A MAZE IS SIMILAR 
  */
 var exist = function (board, word) {
     let n = board.length; //rows
