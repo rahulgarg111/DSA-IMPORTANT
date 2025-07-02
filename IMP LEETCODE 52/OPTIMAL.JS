@@ -3,6 +3,7 @@
  * @return {number}
  */
 //can see other submissions , but this is the best one
+//TIME - O(N!) , SPACE - O(N).
 var totalNQueens = function (n) {
     if (n === 1) return 1;
     if (n === 2 || n === 3) return 0;
