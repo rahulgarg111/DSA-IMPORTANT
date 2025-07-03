@@ -39,17 +39,7 @@ for(let col = 0;col<n;col++){
         placedqueens.set(col,row);
         leftdiagonals.set(row-col,true);
         rightdiagonals.set(row+col,true);
-          let i=0;
-          while(i<n){
-            if(i===col){
-                str+='Q';
-                i++;
-            }
-            else {
-                str+='.';
-                i++;
-            }
-          }
+          str += '.'.repeat(col) + 'Q' + '.'.repeat(n-col-1);
           sub.push(str);
         backtrack(row+1,'');
         placedqueens.delete(col);
