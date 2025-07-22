@@ -1,11 +1,9 @@
-// User function Template for javascript
-
 /**
- * @param {string} s1
- * @param {string} s2
- * @return {number}
+ (the pointers i and j ask , what is the length of the longest common substring considering both
+  i and j , therefore if they dont match we reset and put temp[j] as 0 (as we dont have the 
+  option to omit characters like we did in subsequence)
+2) we maintain a maxlength as the longest substring can end at any i and j indexes
  */
-
 class Solution {
     longestCommonSubstr(s1, s2) {
         let n = s1.length;
