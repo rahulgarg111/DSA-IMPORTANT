@@ -18,7 +18,7 @@ var findTargetSumWays = function (nums, target) {
         let temp = new Map();
 
         for(let [sum,count] of dp){
-            temp.set(sum+nums[i],(temp.get(sum+nums[i])||0)+count);//we would have at least count ways tp make sum+nums[i]
+            temp.set(sum+nums[i],(temp.get(sum+nums[i])||0)+count);//we would have at least count ways to make sum+nums[i]
             temp.set(sum-nums[i],(temp.get(sum-nums[i])||0)+count);
         }
         dp = temp;
