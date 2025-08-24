@@ -1,6 +1,8 @@
 /**
  * @param {number[]} nums
  * @return {number}
+ * naive solution - where we find min max for each subarray , time - O(n^3) as there are order 
+ * of n^2 subarrays and we take O(n) time to get each subarray's min and max.
  */
 //time - O(n)
 //space - O(n)
@@ -16,7 +18,7 @@ var subArrayRanges = function(nums) {
     for(let i=n-1;i>=0;i--){
         while(st1.length>0 && nums[st1[st1.length-1]]<=nums[i]){
             st1.pop();
-        }
+        }   
         if(st1.length===0){
             nge[i]=n;
         }
