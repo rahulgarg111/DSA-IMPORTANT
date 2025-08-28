@@ -1,5 +1,5 @@
 //TIME - O(N) , SPACE- O(N)
-//converted this cleverly to the subarray sum = k -
+//THIS SOLUTION IS IMPORTANT AS WELL
 var numberOfSubarrays = function(nums, k) {
     let n = nums.length;
     let map = new Map();

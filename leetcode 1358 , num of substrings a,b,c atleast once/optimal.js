@@ -5,6 +5,8 @@
 //time - O(n)
 //space - O(1)
 
+// striver video for more explantion  
+
 var numberOfSubstrings = function(s) {
     let n = s.length;
     let beg = 0;
