@@ -1,5 +1,7 @@
 //time - O(N)
-//space - O(N)    
+//space - O(N)  
+//explanation (Neetcode) - https://www.youtube.com/watch?v=etI6HqWVa8U
+
 var subarraysWithKDistinct = function (nums, k) {
     let n = nums.length;
     let l = 0;
